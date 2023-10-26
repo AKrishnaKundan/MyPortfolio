@@ -1,0 +1,178 @@
+:root {
+    --lightblue:  rgb(117, 117, 227);
+    --blue: rgb(42, 24, 146);
+    --pink: rgb(223, 104, 124);
+}  
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+    max-width: 100vw;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    overflow-x:hidden;
+}
+
+
+h2{
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-weight: 600;
+}
+
+.menu-list{
+    display: none;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.menu-list p{
+    padding: 1.1rem 0;
+}
+
+#close{
+    display: none;
+}
+
+.banner{
+    width: 100vw;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--lightblue), var(--pink));
+    padding: 5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.description{
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+    color: rgb(65, 59, 59);
+}
+
+#about{
+    padding: 0rem 1.5rem;
+}
+
+.button{
+    background-color: rgb(133, 71, 209);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    width: 15rem;
+
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-section{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image{
+    max-width: 350px;
+    width: 80vw;
+    aspect-ratio: 1/0.7;
+    border-radius: 1rem;
+    border: 2px solid var(--pink);
+}
+
+.project-title{
+    padding: 1rem 0;
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+#experience{
+    width: 100vw;
+}
+
+.experience-content{
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+}
+
+.heading{
+    font-weight: bold;
+}
+
+#contact{
+    width: 100vw;
+    background-color: black;
+    color: white;
+    margin-top: 2rem;
+}
+
+#contact h2{
+    color: white;
+}
+
+.email{
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    padding: 1rem 0 4rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+   body{
+    width:100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+   #about{
+    width: 50vw;
+   }
+
+   #experience{
+        padding: 0 15rem;
+   }
+}
