@@ -2,6 +2,7 @@
     --lightblue:  rgb(117, 117, 227);
     --blue: rgb(42, 24, 146);
     --pink: rgb(223, 104, 124);
+    --grey: rgb(192, 192, 192, 0.7);
 }  
 
 *{
@@ -97,6 +98,8 @@ h2{
     align-items: center;
 }
 
+   
+
 #projects{
     display: flex;
     flex-wrap: wrap;
@@ -112,19 +115,56 @@ h2{
     align-items: center;
 }
 
-.project-image{
-    max-width: 350px;
-    width: 80vw;
-    aspect-ratio: 1/0.7;
-    border-radius: 1rem;
-    border: 2px solid var(--pink);
-}
-
 .project-title{
     padding: 1rem 0;
     color: var(--blue);
     font-size: 1.2rem;
     font-weight: 1000;
+}
+
+a{
+    display: block;
+}
+
+.project-image{
+    position: relative;
+    max-width: 350px;
+    width: 80vw;
+    aspect-ratio: 1/0.7;
+    border-radius: 1rem;
+}
+
+.project-image img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.project-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    background-color: var(--grey);
+    left: 120px;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.project-text:hover{
+    left: 0;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-skills, .project-description{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 0.6rem;
 }
 
 #experience{
