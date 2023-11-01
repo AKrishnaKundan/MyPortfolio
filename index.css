@@ -69,6 +69,10 @@ h2{
     padding: 0rem 1.5rem;
 }
 
+.flex-container{
+    display: flex;
+}
+
 .button{
     background-color: rgb(133, 71, 209);
     color: white;
