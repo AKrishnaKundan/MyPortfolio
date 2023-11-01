@@ -105,6 +105,8 @@ h2{
    
 
 #projects{
+    width: 100vw;
+    overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
